@@ -39,3 +39,13 @@ body {
     background-color: #E60073;
     color: #FFF;
 }
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-pink) !important; }
