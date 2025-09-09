@@ -24,3 +24,4 @@ popupBienvenida.addEventListener('click', (e) => {
     formLogin.style.display = 'none';
   }
 });
+
