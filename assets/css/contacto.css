@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+:root {
+    --color-pink: #ff0080;
+    --color-secondary: #FDE8F3;
+}
+
+.bg-pink { background-color: var(--color-pink) !important; }
+.text-pink { color: var(--color-pink) !important; }
+

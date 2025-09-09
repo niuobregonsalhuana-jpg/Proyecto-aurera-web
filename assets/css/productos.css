@@ -17,35 +17,18 @@ body {
 .bg-pink { background-color: var(--color-pink) !important; }
 .text-pink { color: var(--color-pink) !important; }
 
-.navbar-brand {
-    transition: transform 0.3s ease;
+
+
+.letter1{ border: 2px;
+
 }
 
-.navbar-brand:hover {
-    transform: scale(1.2);
-}
 
-.btn-custom {
-    background-color: var(--color-pink);
-    border: none;
-    border-radius: 50px;
-    padding: 12px 28px;
-    font-weight: 600;
-    color: #FFF;
-    transition: all 0.3s ease;
-}
 
-.btn-custom:hover {
-    background-color: #E60073;
-    color: #FFF;
-}
 
-.nav-link {
-  color: #333 !important;
-  font-weight: 500;
-  margin: 0 12px;
-  transition: color 0.3s ease;
-}
 
-.nav-link:hover {
-  color: var(--color-pink) !important; }
+
+
+
+
+
