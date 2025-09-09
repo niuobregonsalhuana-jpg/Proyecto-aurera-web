@@ -50,3 +50,24 @@ margin: 20px;
   display: block;
   border-radius: 15px;
 }
+
+
+
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;       
+  justify-content: center;}
+
+.imagen img {
+  width: 350px; 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  transition: transform 0.3s ease;
+}
+
+.imagen img:hover {
+  transform: scale(1.05);
+}
