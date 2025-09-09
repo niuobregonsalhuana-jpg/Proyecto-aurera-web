@@ -19,10 +19,18 @@ body {
 
 
 
-.letter1{ border: 2px;
+.letter1{ margin: 30px;
 
 }
 
+.imagens{
+  width: 500px;    
+  height: 300px;       
+  overflow: hidden;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
 
 
 
