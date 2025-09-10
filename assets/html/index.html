@@ -12,13 +12,16 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-pink navbar-dark sticky-top shadow-lg">
   <div class="container">
-    <a class="navbar-brand fw-bold text-white" href="#">Aurea</a>
+    <a class="navbar-brand fw-bold text-white" href="#">Aurera</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        
+
+        <li class="nav-item mx-3">
+          <a class="nav-link fw-bold text-white" href="./index.html">inicio</a>
+        </li>
         <li class="nav-item mx-3">
           <a class="nav-link fw-bold text-white" href="./sobre-aurea.html">Sobre Aurera</a>
         </li>
@@ -45,7 +48,7 @@
         <div class="col-md-6 text-center text-md-start">
           <h1 class="fw-bold text-pink display-5">DESCUBRE TU BELLEZA</h1>
           <p class="text-muted">
-            En Aurea creemos que la belleza no es solo maquillaje, es la forma en la que expresas quién eres.
+            En Aurera creemos que la belleza no es solo maquillaje, es la forma en la que expresas quién eres.
             Cada producto está diseñado para resaltar tu esencia, brindarte confianza y acompañarte en cada estilo de vida.
           </p>
           <a href="#" class="btn btn-custom mt-3">Inicia Aquí</a>
@@ -64,7 +67,7 @@
           <img src="../img/imagen2.png" alt="Sobre Aurera" class="img-fluid">
         </div>
         <div class="col-md-6">
-          <h2 class="fw-bold">Sobre Aurea</h2>
+          <h2 class="fw-bold">Sobre Aurera</h2>
           <p>
             <strong>Aurera</strong> es una marca comprometida con redefinir la belleza 
             como una herramienta de empoderamiento, confianza y expresión personal.
@@ -180,12 +183,16 @@
     <h6 class="text-muted mb-1 text-center">Bienvenido a</h6>
     <h2 class="fw-bold text-center" style="color: #d20072;">Aurera</h2>
 
-    <form class="mt-4">
-      <input type="email" class="form-control mb-3 rounded-pill" placeholder="Correo electrónico">
-      <input type="password" class="form-control mb-2 rounded-pill" placeholder="Contraseña">
+    <form class="mt-4" id="formularioLogin">
+      <input type="email" id="correo" class="form-control mb-3 rounded-pill" placeholder="Correo electrónico" required>
+
+      <div class="position-relative">
+       <input type="password" id="contraseña" class="form-control mb-2 rounded-pill" placeholder="Contraseña" minlength="6" required>
+       <i class="bi bi-eye-slash-fill position-absolute top-50 end-0 translate-middle-y me-3" id="togglePassword" style="cursor: pointer; color: #999;"></i>
+      </div>
 
       <div class="mb-3 text-muted text-center">
-        <small>¿Olvidaste tu contraseña?</small>
+        <small><a href="#">¿Olvidaste tu contraseña?</a></small>
       </div>
 
       <button type="submit" class="btn btn-custom w-100 rounded-pill mb-2">Ingresar</button>
