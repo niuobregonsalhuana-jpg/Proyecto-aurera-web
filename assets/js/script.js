@@ -1,4 +1,4 @@
-// Parte 1: control del popup //
+
 const btnAbrirBienvenida = document.getElementById('btnAbrirBienvenida');
 const popupBienvenida = document.getElementById('popupBienvenida');
 
@@ -28,7 +28,7 @@ popupBienvenida.addEventListener('click', (e) => {
   }
 });
 
-// Parte 2: Validacion del formulario //
+
 const formulario = document.getElementById('formularioLogin');
 const correoInput = document.getElementById('correo');
 const contraseñaInput = document.getElementById('contraseña');
@@ -58,7 +58,6 @@ formulario.addEventListener('submit', function (e) {
   alert('Inicio de sesión exitoso!');
 });
 
-// Parte 3: Mostrar y ocultar contraseña //
 const togglePasswordBtn = document.getElementById('togglePassword');
 
 togglePasswordBtn.addEventListener('click', function (e) {
@@ -73,7 +72,6 @@ togglePasswordBtn.addEventListener('click', function (e) {
   this.classList.toggle('bi-eye-fill');
 });
 
-// Parte 4: Formulario registro //
 const formRegistro = document.getElementById('formRegistro');
 const formularioRegistro = document.getElementById('formularioRegistro');
 const correoRegistro = document.getElementById('correoRegistro');
