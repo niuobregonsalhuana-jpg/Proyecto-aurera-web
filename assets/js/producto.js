@@ -1,21 +1,15 @@
 const track = document.getElementById("track");
-const carousel = document.querySelector(".carousel");
 const images = document.querySelectorAll("#track img");
 
 let index = 0;
 
 function moveCarousel() {
-  const width = carousel.offsetWidth;
   index++;
   if (index >= images.length) {
-    index = 0;
+    index = 0; // vuelve al inicio
   }
-  track.style.transform = `translateX(${-index * width}px)`;
+  track.style.transform = `translateX(${-index * 100}%)`;
 }
 
+// cambia de imagen cada 3 segundos
 setInterval(moveCarousel, 3000);
-
-window.addEventListener("resize", () => {
-  const width = carousel.offsetWidth;
-  track.style.transform = `translateX(${-index * width}px)`;
-});
