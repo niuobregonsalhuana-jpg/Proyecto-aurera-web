@@ -14,5 +14,23 @@ setInterval(moveCarousel, 3000);
 
 
 
+function toggleAyuda() {
+  const cuadro = document.getElementById("cuadroAyuda");
+  cuadro.style.display = (cuadro.style.display === "block") ? "none" : "block";
+}
+
+function enviarMensaje() {
+  const texto = document.querySelector("#cuadroAyuda textarea").value;
+  if (texto.trim() === "") {
+    alert("Por favor, escribe un mensaje 😊");
+    return;
+  }
+
+  alert("¡Gracias por tu comentario! 📨");
+  document.querySelector("#cuadroAyuda textarea").value = "";
+  document.getElementById("cuadroAyuda").style.display = "none";
+}
+
+
 
 

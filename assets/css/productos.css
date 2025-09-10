@@ -64,17 +64,14 @@ body {
 
 
 
-/* Contenedor general */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
-  padding: 20px;
   max-width: 1200px;
   margin: auto;
 }
 
-/* Tarjeta de producto */
 .card {
   background: white;
   border-radius: 10px;
@@ -84,7 +81,6 @@ body {
   transition: 0.3s ease;
 }
 
-/* Imagen y contenedor */
 .image-container {
   position: relative;
   overflow: hidden;
@@ -97,12 +93,12 @@ body {
   display: block;
 }
 
-/* Oscurecer imagen al hacer hover */
+
 .image-container:hover img {
   filter: brightness(70%);
 }
 
-/* Botón oculto por defecto */
+
 .add-button {
   position: absolute;
   top: 50%;
@@ -120,12 +116,10 @@ body {
   
 }
 
-/* Mostrar botón al hacer hover */
 .image-container:hover .add-button {
   opacity: 1;
 }
 
-/* Información del producto */
 .info {
   padding: 15px;
   text-align: center;
@@ -143,3 +137,86 @@ body {
   margin: 0;
 }
 
+
+.letter3 {
+  margin-top: 100px;
+ text-align: center;
+ font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+h1 {
+  text-align: center;
+  color: #e91e63;
+  margin-top: 40px;
+}
+
+
+.mascota {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  width: 80px;
+}
+
+.mascota img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.mascota:hover img {
+  transform: scale(1.1);
+}
+
+.cuadro-ayuda {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+  background: #fff;
+  border: 2px solid #e91e63;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 998;
+}
+
+.cuadro-ayuda h3 {
+  margin-top: 0;
+  color: #e91e63;
+}
+
+.cuadro-ayuda textarea {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 5px;
+  resize: none;
+}
+
+.cuadro-ayuda button {
+  margin-top: 10px;
+  width: 100%;
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cuadro-ayuda button:hover {
+  background: #c2185b;
+}
