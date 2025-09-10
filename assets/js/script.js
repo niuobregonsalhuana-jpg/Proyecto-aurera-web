@@ -70,3 +70,65 @@ togglePasswordBtn.addEventListener('click', function (e) {
   this.classList.toggle('bi-eye-slash-fill');
   this.classList.toggle('bi-eye-fill');
 });
+
+// Parte 4: Formulario registro //
+const formRegistro = document.getElementById('formRegistro');
+const formularioRegistro = document.getElementById('formularioRegistro');
+const correoRegistro = document.getElementById('correoRegistro');
+const contraseñaRegistro = document.getElementById('contraseñaRegistro');
+const togglePasswordRegistro = document.getElementById('togglePasswordRegistro');
+
+const btnCrearCuenta = bienvenidaContent.querySelectorAll('.btn-custom')[1];
+btnCrearCuenta.addEventListener('click', () => {
+  bienvenidaContent.style.display = 'none';
+  formLogin.style.display = 'none';
+  formRegistro.style.display = 'block';
+});
+
+const LinkIniciarSesion = document.getElementById('linkIniciarSesion');
+LinkIniciarSesion.addEventListener('click', (e) => {
+  e.preventDefault();
+  formRegistro.style.display = 'none';
+  formLogin.style.display = 'block';
+});
+
+formularioRegistro.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const correo = correoRegistro.value.trim().toLowerCase();
+  const contraseña = contraseñaRegistro.value.trim();
+
+  if (!correo.endsWith('@gmail.com')) {
+    correoRegistro.setCustomValidity('Solo se permiten correos @gmail.com');
+    correoRegistro.reportValidity();
+    return;
+  } else {
+    correoRegistro.setCustomValidity('');
+  }
+
+  if (contraseña.length < 6) {
+    contraseñaRegistro.setCustomValidity('La contraseña debe tener al menos 6 caracteres.');
+    contraseñaRegistro.reportValidity();
+    return;
+  } else {
+    contraseñaRegistro.setCustomValidity('');
+  }
+
+  alert('Registro exitoso! Por favor, inicia sesión.');
+});
+
+togglePasswordRegistro.addEventListener('click', function () {
+  const tipo = contraseñaRegistro.getAttribute('type') === 'password' ? 'text' : 'password';
+  contraseñaRegistro.setAttribute('type', tipo);
+  this.classList.toggle('bi-eye-fill');
+  this.classList.toggle('bi-eye-slash-fill');
+});
+
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Escape' && popupBienvenida.style.display === 'flex') {
+    popupBienvenida.style.display = 'none';
+    bienvenidaContent.style.display = 'block';
+    formLogin.style.display = 'none';
+    formRegustro.style.display = 'none';
+  }
+});
