@@ -22,11 +22,11 @@ function toggleAyuda() {
 function enviarMensaje() {
   const texto = document.querySelector("#cuadroAyuda textarea").value;
   if (texto.trim() === "") {
-    alert("Por favor, escribe un mensaje 😊");
+    alert("Por favor, escribe tu comentario :D");
     return;
   }
 
-  alert("¡Gracias por tu comentario! 📨");
+  alert("Gracias por tu comentario :D");
   document.querySelector("#cuadroAyuda textarea").value = "";
   document.getElementById("cuadroAyuda").style.display = "none";
 }

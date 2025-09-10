@@ -152,13 +152,6 @@ body {
 
 
 
-h1 {
-  text-align: center;
-  color: #e91e63;
-  margin-top: 40px;
-}
-
-
 .mascota {
   position: fixed;
   bottom: 20px;
@@ -202,8 +195,7 @@ h1 {
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 5px;
-  resize: none;
+  
 }
 
 .cuadro-ayuda button {
@@ -217,6 +209,3 @@ h1 {
   cursor: pointer;
 }
 
-.cuadro-ayuda button:hover {
-  background: #c2185b;
-}
