@@ -16,6 +16,7 @@ btnAbrirBienvenida.addEventListener('click', (e) => {
 btnIniciarSesion.addEventListener('click', () => {
   bienvenidaContent.style.display = 'none';
   formLogin.style.display = 'block';
+  formRegistro.style.displaty = 'none';
 });
 
 popupBienvenida.addEventListener('click', (e) => {
@@ -23,6 +24,7 @@ popupBienvenida.addEventListener('click', (e) => {
     popupBienvenida.style.display = 'none';
     bienvenidaContent.style.display = 'block';
     formLogin.style.display = 'none';
+    formRegistro.style.display = 'none';
   }
 });
 
@@ -129,6 +131,6 @@ document.addEventListener('keydown', (e) => {
     popupBienvenida.style.display = 'none';
     bienvenidaContent.style.display = 'block';
     formLogin.style.display = 'none';
-    formRegustro.style.display = 'none';
+    formRegistro.style.display = 'none';
   }
 });
