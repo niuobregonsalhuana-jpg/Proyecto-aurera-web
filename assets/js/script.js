@@ -16,7 +16,7 @@ btnAbrirBienvenida.addEventListener('click', (e) => {
 btnIniciarSesion.addEventListener('click', () => {
   bienvenidaContent.style.display = 'none';
   formLogin.style.display = 'block';
-  formRegistro.style.displaty = 'none';
+  formRegistro.style.display = 'none';
 });
 
 popupBienvenida.addEventListener('click', (e) => {
@@ -90,6 +90,13 @@ LinkIniciarSesion.addEventListener('click', (e) => {
   e.preventDefault();
   formRegistro.style.display = 'none';
   formLogin.style.display = 'block';
+});
+
+const LinkCrearCuenta = document.getElementById('linkCrearCuenta');
+LinkCrearCuenta.addEventListener('click', (e) => {
+  e.preventDefault();
+  formLogin.style.display = 'none';
+  formRegistro.style.display = 'block';
 });
 
 formularioRegistro.addEventListener('submit', function (e) {
