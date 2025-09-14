@@ -17,3 +17,23 @@ body {
 .bg-pink { background-color: var(--color-pink) !important; }
 .text-pink { color: var(--color-pink) !important; }
 
+.mision-sobre-aurea {
+  background-color: var(--color-secondary);
+  padding: 60px 20px; 
+  border-radius: 8px; 
+  margin-top: 40px; 
+}
+
+.separador-rosado {
+    background-color: var(--color-pink);
+    color: #FFF;
+    text-align: center;
+    padding: 48px 0;
+}
+
+.titulo-separador {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
