@@ -131,3 +131,64 @@ html,body {
 .popup-bienvenida.active {
   display: flex; 
 }
+
+
+
+
+
+.mascota {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  width: 80px;
+}
+
+.mascota img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.mascota:hover img {
+  transform: scale(1.1);
+}
+
+.cuadro-ayuda {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+  background: #fff;
+  border: 2px solid #e91e63;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 998;
+}
+
+.cuadro-ayuda h3 {
+  margin-top: 0;
+  color: #e91e63;
+}
+
+.cuadro-ayuda textarea {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  
+}
+
+.cuadro-ayuda button {
+  margin-top: 10px;
+  width: 100%;
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}

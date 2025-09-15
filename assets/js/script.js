@@ -139,3 +139,4 @@ document.addEventListener('keydown', (e) => {
     formRegistro.style.display = 'none';
   }
 });
+
