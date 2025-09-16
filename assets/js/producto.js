@@ -35,7 +35,7 @@ function enviarMensaje() {
 
 
 
-const styleSheet = document.createElement("style");
+//const styleSheet = document.createElement("style");
     styleSheet.innerText = styles;
     document.head.appendChild(styleSheet);
 
@@ -95,5 +95,5 @@ const styleSheet = document.createElement("style");
       });
     
 
-    mostrarProductos();
+    
   
