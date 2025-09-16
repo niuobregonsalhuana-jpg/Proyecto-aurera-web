@@ -70,10 +70,10 @@ const bigProductsData = [
   },
 
     {
-    name: "",
-    description: "",
+    name: "One Thing",
+    description: "Esencia pura",
     imgUrl:
-      "",
+      "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_one_thing.jpg&w=640&q=80",
   },
 
     {
