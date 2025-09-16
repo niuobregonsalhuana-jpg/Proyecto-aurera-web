@@ -48,11 +48,57 @@ const bigProductsData = [
       "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_dear_klairs.jpg&w=640&q=80",
   },
   {
-    name: "Some By Mi AHA BHA",
-    description: "Exfoliante químico suave para piel grasa",
+    name: "Abib",
+    description: "Revitaliza tu mirada",
     imgUrl:
-      "https://cdn.shopify.com/s/files/1/0576/4642/8954/products/somebymi_1024x1024.jpg",
+      "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_abib.jpg&w=640&q=80",
   },
+
+
+  {
+    name: "NINELESS",
+    description: "Piel impecable",
+    imgUrl:
+      "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_nineless.jpg&w=640&q=80",
+  },
+
+  {
+    name: "d'Alba",
+    description: "Brillo duradero",
+    imgUrl:
+      "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_dalba.jpg&w=640&q=80",
+  },
+
+    {
+    name: "",
+    description: "",
+    imgUrl:
+      "",
+  },
+
+    {
+    name: "",
+    description: "",
+    imgUrl:
+      "",
+  },
+
+    {
+    name: "",
+    description: "",
+    imgUrl:
+      "",
+  },
+
+    {
+    name: "",
+    description: "",
+    imgUrl:
+      "",
+  },
+
+
+
 ];
 
 let bigProductContainer = document.querySelector("#big-product-container");
@@ -108,3 +154,8 @@ for (let i = 0; i < bigProductsData.length; i++) {
 // });
 
 // mostrarProductos();
+
+
+
+
+
