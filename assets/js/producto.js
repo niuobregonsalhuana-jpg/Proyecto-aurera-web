@@ -12,11 +12,9 @@ function moveCarousel() {
 }
 setInterval(moveCarousel, 3000);
 
-
-
 function toggleAyuda() {
   const cuadro = document.getElementById("cuadroAyuda");
-  cuadro.style.display = (cuadro.style.display === "block") ? "none" : "block";
+  cuadro.style.display = cuadro.style.display === "block" ? "none" : "block";
 }
 
 function enviarMensaje() {
@@ -31,69 +29,82 @@ function enviarMensaje() {
   document.getElementById("cuadroAyuda").style.display = "none";
 }
 
+// const styleSheet = document.createElement("style");
+// styleSheet.innerText = styles;
+// document.head.appendChild(styleSheet);
 
+// FILL PRODUCTS
+const bigProductsData = [
+  {
+    name: "SKIN1004",
+    description: "Reparación delicada",
+    imgUrl:
+      "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_skin1004.jpg&w=640&q=80",
+  },
+  {
+    name: "Dear, Klairs",
+    description: "Hidratante iluminador",
+    imgUrl:
+      "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_dear_klairs.jpg&w=640&q=80",
+  },
+  {
+    name: "Some By Mi AHA BHA",
+    description: "Exfoliante químico suave para piel grasa",
+    imgUrl:
+      "https://cdn.shopify.com/s/files/1/0576/4642/8954/products/somebymi_1024x1024.jpg",
+  },
+];
 
+let bigProductContainer = document.querySelector("#big-product-container");
 
+for (let i = 0; i < bigProductsData.length; i++) {
+  bigProductContainer.innerHTML += `
+    <div class="card">
+      <div class="image-container">
+        <img
+          src="${bigProductsData[i].imgUrl}"
+          alt="${bigProductsData[i].name}"
+        />
+        <button class="add-button">Añadir</button>
+      </div>
+      <div class="info">
+        <h3>${bigProductsData[i].name}</h3>
+        <p>${bigProductsData[i].description}</p>
+      </div>
+    </div>
+    `;
+}
 
-const styleSheet = document.createElement("style");
-    styleSheet.innerText = styles;
-    document.head.appendChild(styleSheet);
+// productos.forEach((producto) => {
+//   const card = document.createElement("div");
+//   card.classList.add("card");
 
-    const productos = [
-      {
-        name: "SKIN1004",
-        description: "Reparación delicada",
-        imgUrl: "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_skin1004.jpg&w=640&q=80"
-      },
-      {
-        name: "COSRX Snail Essence",
-        description: "Esencia regeneradora con mucina de caracol",
-        imgUrl: "https://cdn.shopify.com/s/files/1/0576/4642/8954/products/skin1004_1024x1024.jpg"
-      },
-      {
-        name: "Some By Mi AHA BHA",
-        description: "Exfoliante químico suave para piel grasa",
-        imgUrl: "https://cdn.shopify.com/s/files/1/0576/4642/8954/products/somebymi_1024x1024.jpg"
-      }
-    ];
+//   card.innerHTML = `
+//         <div class="image-container">
+//           <img src="${producto.imgUrl}" alt="${producto.name}">
+//           <button class="add-button">Añadir</button>
+//         </div>
+//         <div class="info">
+//           <h3>${producto.name}</h3>
+//           <p>${producto.description}</p>
+//         </div>
+//       `;
 
-    
-    const productList = document.getElementById("product-list");
+//   productList.appendChild(card);
+// });
 
-    productos.forEach(producto => {
-      const card = document.createElement("div");
-      card.classList.add("card");
+// productosGuardados.forEach((producto) => {
+//   cartContainer.innerHTML += `
+//           <div class="card">
+//             <div class="image-container">
+//               <img src="${producto.imgUrl}" alt="${producto.name}">
+//             </div>
+//             <div class="info">
+//               <h3>${producto.name}</h3>
+//               <p>${producto.description}</p>
+//             </div>
+//           </div>
+//         `;
+// });
 
-      card.innerHTML = `
-        <div class="image-container">
-          <img src="${producto.imgUrl}" alt="${producto.name}">
-          <button class="add-button">Añadir</button>
-        </div>
-        <div class="info">
-          <h3>${producto.name}</h3>
-          <p>${producto.description}</p>
-        </div>
-      `;
-
-      productList.appendChild(card);
-    });
-
-
-
-      productosGuardados.forEach(producto => {
-        cartContainer.innerHTML += `
-          <div class="card">
-            <div class="image-container">
-              <img src="${producto.imgUrl}" alt="${producto.name}">
-            </div>
-            <div class="info">
-              <h3>${producto.name}</h3>
-              <p>${producto.description}</p>
-            </div>
-          </div>
-        `;
-      });
-    
-
-    mostrarProductos();
-  
+// mostrarProductos();
