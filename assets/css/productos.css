@@ -62,11 +62,12 @@ body {
 }
 
 .big-product-container {
+  margin: 20px;
  display: grid;
   grid-template-columns: repeat(4, 1fr); 
-  gap: 20px; 
+  gap: 20px;
   padding: 20px
-  margin: auto;
+  
 }
 
 .card {

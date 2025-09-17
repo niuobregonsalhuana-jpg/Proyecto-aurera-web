@@ -35,12 +35,6 @@ function enviarMensaje() {
 
 
 
-//const styleSheet = document.createElement("style");
- // const styleSheet = document.createElement("style");
-// styleSheet.innerText = styles;
-// document.head.appendChild(styleSheet);
-
-// FILL PRODUCTS
 const bigProductsData = [
   {
     name: "SKIN1004",
@@ -228,45 +222,82 @@ for (let i = 0; i < bigProductsData.length; i++) {
     `;
 }
 
-// productos.forEach((producto) => {
-//   const card = document.createElement("div");
-//   card.classList.add("card");
 
-//   card.innerHTML = `
-//         <div class="image-container">
-//           <img src="${producto.imgUrl}" alt="${producto.name}">
-//           <button class="add-button">Añadir</button>
-//         </div>
-//         <div class="info">
-//           <h3>${producto.name}</h3>
-//           <p>${producto.description}</p>
-//         </div>
-//       `;
-
-//   productList.appendChild(card);
-// });
-
-// productosGuardados.forEach((producto) => {
-//   cartContainer.innerHTML += `
-//           <div class="card">
-//             <div class="image-container">
-//               <img src="${producto.imgUrl}" alt="${producto.name}">
-//             </div>
-//             <div class="info">
-//               <h3>${producto.name}</h3>
-//               <p>${producto.description}</p>
-//             </div>
-//           </div>
-//         `;
-// });
-
-// mostrarProductos();
 
     
 
     
 
 
+const productscontainerData = [
+  {
+    name: "Glutathione",
+    description: "Crema facial",
+    price: 20.0,
+    imgUrl:
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/71/468/M_p0193746871.jpg",
+  },
+
+
+   {
+    name: "Colorgram",
+    description: "Gloss con color",
+    price: 9.99 ,
+    imgUrl:
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/20/113/M_p0198711320.jpg",
+  },
+
+  {
+    name: "Joocyee",
+    description: "Rubor en barra",
+    price:10.89 ,
+    imgUrl:
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/39/937/M_p0218793739.jpg",
+  },
+
+  {
+    name: "Shanteel",
+    description: "Polvo compacto",
+    price: 12.99 ,
+    imgUrl:
+    "https://d1flfk77wl2xk4.cloudfront.net/Assets/02/976/M_p0220697602.jpg"
+      
+  },
+
+  {
+    name: "Centella",
+    description: "Tonico Facial",
+    price: 19.99,
+    imgUrl:
+        "https://d1flfk77wl2xk4.cloudfront.net/Assets/49/215/M_p0114021549.jpg"
+      
+  },
+
+
+
+];
+
+let productcontainer = document.querySelector("#product-container");
+
+
+for (let i = 0; i < productscontainerData.length; i++) {
+  productcontainer.innerHTML += `
+    <div class="product-card">
+      <div class="img-1">
+        <img
+          src="${productscontainerData[i].imgUrl}"
+          alt="${productscontainerData[i].name}"
+        />
+        <button class="add-button">Añadir</button>
+      </div>
+      <div class="info">
+        <h3>${productscontainerData[i].name}</h3>
+        <p>${productscontainerData[i].description}</p>
+        <b>$${productscontainerData[i].price.toFixed(2)}</b>
+      </div>
+    </div>
+  `;
+}
 
 
 
