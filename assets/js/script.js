@@ -146,3 +146,35 @@ document.addEventListener("keydown", (e) => {
     formRegistro.style.display = "none";
   }
 });
+
+let tarjetas = 0; // contador de tarjetas
+
+// elementos del DOM
+const cartCounter = document.getElementById("cartCounter");
+const promoNotificacion = document.getElementById("promoNotificacion");
+const promoModal = new bootstrap.Modal(document.getElementById("promoModal"));
+
+// seleccionar todos los botones "Añadir"
+const addButtons = document.querySelectorAll(".add-button");
+
+addButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    tarjetas++;
+    cartCounter.textContent = `${tarjetas} 🎟️`;
+
+    // si se llega a 2 tarjetas → desbloquea regalo
+    if (tarjetas % 2 === 0) {
+      mostrarNotificacion();
+      promoModal.show();
+    }
+  });
+});
+
+// función para mostrar la notificación flotante
+function mostrarNotificacion() {
+  promoNotificacion.classList.add("show");
+
+  setTimeout(() => {
+    promoNotificacion.classList.remove("show");
+  }, 3000); // desaparece después de 3s
+}
