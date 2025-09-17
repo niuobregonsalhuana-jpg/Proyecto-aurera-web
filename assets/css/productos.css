@@ -62,10 +62,10 @@ body {
 }
 
 .big-product-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
- 
+ display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  padding: 20px
   margin: auto;
 }
 
@@ -110,7 +110,9 @@ body {
   transition: 0.3s ease;
 }
 
-
+.image-container:hover .add-button {
+  opacity: 1;
+}
 
 .info {
   padding: 15px;
