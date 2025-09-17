@@ -39,6 +39,7 @@ body {
   margin: 3px;
   padding: 50px;
   border: 0.8px;
+  color: #333;
 }
 
 .carousel {
@@ -146,6 +147,7 @@ body {
   margin-top: 50px;
   text-align: center;
   font-size: 30px;
+  color: #333;
 }
 
 .mascota {
@@ -210,6 +212,7 @@ body {
   gap: 20px;            
   justify-content: center;
   padding: 70px; 
+  color: black;
 }
 
 .popup-bienvenida {
