@@ -104,102 +104,105 @@ const bigProductsData = [
 
 
   {
-    name: "",
-    description: "",
+    name: "Medi Peel",
+    description: "Peeling eficaz",
     imgUrl:
-      
-      
+        "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_medi_peel.jpg&w=640&q=80"  
   },
 
     {
-    name: "",
-    description: "",
+    name: "LANEIGE ",
+    description: " Labios suaves y rellenos",
     imgUrl:
-      
-      
-  },
-
-
-    {
-    name: "",
-    description: "",
-    imgUrl:
-      
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/laneige-lip-sleeping-mask-ex-mini-3g/47/238/XXL_p0099423847.jpg"
       
   },
 
 
     {
-    name: "",
-    description: "",
+    name: "NEEDLY ",
+    description: "Crema para ojos",
     imgUrl:
       
+     "https://d1flfk77wl2xk4.cloudfront.net/Assets/05/459/XXL_p0150945905.jpg" 
+  },
+
+
+    {
+    name: "Glow Stick",
+    description: "Corrector en crema",
+    imgUrl: 
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/92/232/XXL_p0212123292.jpg"
+  },
+
+
+    {
+    name: "TOCOBO",
+    description: "Duo de Bloqueador solar",
+    imgUrl:
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/tocobo-cotton-soft-sun-stick-bundle-set-2-pcs/44/294/XXL_p0219429444.jpg"
       
   },
 
 
     {
-    name: "",
-    description: "",
+    name: "ATUDE",
+    description: "Base facial",
     imgUrl:
-      
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/etude-double-lasting-foundation-new-12-colors/75/266/L_p0130326675.jpg"
       
   },
 
 
     {
-    name: "",
-    description: "",
+    name: "MADICUBE",
+    description: "Mascarilla facial",
     imgUrl:
-      
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/medicube-collagen-night-wrapping-mask-bundle-set-2-pcs/86/380/XXL_p0219538086.jpg"
       
   },
 
 
     {
-    name: "",
-    description: "",
+    name: "KSECRET",
+    description: "Contorno de ojos",
     imgUrl:
-      
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/ksecret-seoul-1988-eye-cream-retinal-liposome-4-fermented-bean-30ml/20/371/XXL_p0212137120.jpg"
       
   },
 
 
     {
-    name: "",
-    description: "",
+    name: "TIRTI",
+    description: "Tinta Lbial",
     imgUrl:
       
-      
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/tirtir-waterism-glow-tint-mini-30-colors/89/316/XXL_p0214831689.jpg"
   },
 
 
     {
-    name: "",
-    description: "",
+    name: "PERIPERA",
+    description: "Mascarilla para cejas",
     imgUrl:
-      
-      
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/08/159/M_p0178115908.jpg"
   },
 
 
     {
-    name: "",
-    description: "",
+    name: "NOVO",
+    description: "Crema de manos",
     imgUrl:
-      
-      
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/78/536/M_p0216553678.jpg"    
   },
 
 
-    {
-    name: "",
-    description: "",
+ {
+    name: "CORSX",
+    description: "Piel Suave",
     imgUrl:
-      
-      
+      "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk36/pb_cosrx.jpg&w=640&q=80"    
   },
-
   
 
 

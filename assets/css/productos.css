@@ -65,7 +65,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
-  max-width: 1200px;
+ 
   margin: auto;
 }
 
@@ -84,7 +84,7 @@ body {
 }
 
 .image-container img {
-  width: 100%;
+ width: 100%;
   height: auto;
   transition: 0.3s ease;
   display: block;
@@ -110,9 +110,7 @@ body {
   transition: 0.3s ease;
 }
 
-.image-container:hover .add-button {
-  opacity: 1;
-}
+
 
 .info {
   padding: 15px;
