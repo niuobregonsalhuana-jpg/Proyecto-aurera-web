@@ -34,7 +34,7 @@ function enviarMensaje() {
 
 
 
-
+// FALTA AGREGAR EL PRECIO DE LOS PRODUCTOS EN ESTE ARREGLO SI SON NECESARIOS, COMO EN EL OTRO ARREGLO
 const bigProductsData = [
   {
     name: "SKIN1004",
@@ -78,7 +78,7 @@ const bigProductsData = [
       "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_tocobo.jpg&w=640&q=80",
   },
 
-  
+
 
     {
     name: "Rohto",
@@ -93,7 +93,7 @@ const bigProductsData = [
     description: "Textura ligera",
     imgUrl:
       "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_house_of_hur.jpg&w=640&q=80"
-      
+
   },
 
 
@@ -101,7 +101,7 @@ const bigProductsData = [
     name: "Medi Peel",
     description: "Peeling eficaz",
     imgUrl:
-        "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_medi_peel.jpg&w=640&q=80"  
+        "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_medi_peel.jpg&w=640&q=80"
   },
 
     {
@@ -109,7 +109,7 @@ const bigProductsData = [
     description: " Labios suaves y rellenos",
     imgUrl:
       "https://d1flfk77wl2xk4.cloudfront.net/Assets/laneige-lip-sleeping-mask-ex-mini-3g/47/238/XXL_p0099423847.jpg"
-      
+
   },
 
 
@@ -117,15 +117,15 @@ const bigProductsData = [
     name: "NEEDLY ",
     description: "Crema para ojos",
     imgUrl:
-      
-     "https://d1flfk77wl2xk4.cloudfront.net/Assets/05/459/XXL_p0150945905.jpg" 
+
+     "https://d1flfk77wl2xk4.cloudfront.net/Assets/05/459/XXL_p0150945905.jpg"
   },
 
 
     {
     name: "Glow Stick",
     description: "Corrector en crema",
-    imgUrl: 
+    imgUrl:
       "https://d1flfk77wl2xk4.cloudfront.net/Assets/92/232/XXL_p0212123292.jpg"
   },
 
@@ -135,7 +135,7 @@ const bigProductsData = [
     description: "Duo de Bloqueador solar",
     imgUrl:
       "https://d1flfk77wl2xk4.cloudfront.net/Assets/tocobo-cotton-soft-sun-stick-bundle-set-2-pcs/44/294/XXL_p0219429444.jpg"
-      
+
   },
 
 
@@ -144,7 +144,7 @@ const bigProductsData = [
     description: "Base facial",
     imgUrl:
       "https://d1flfk77wl2xk4.cloudfront.net/Assets/etude-double-lasting-foundation-new-12-colors/75/266/L_p0130326675.jpg"
-      
+
   },
 
 
@@ -153,7 +153,7 @@ const bigProductsData = [
     description: "Mascarilla facial",
     imgUrl:
       "https://d1flfk77wl2xk4.cloudfront.net/Assets/medicube-collagen-night-wrapping-mask-bundle-set-2-pcs/86/380/XXL_p0219538086.jpg"
-      
+
   },
 
 
@@ -162,7 +162,7 @@ const bigProductsData = [
     description: "Contorno de ojos",
     imgUrl:
       "https://d1flfk77wl2xk4.cloudfront.net/Assets/ksecret-seoul-1988-eye-cream-retinal-liposome-4-fermented-bean-30ml/20/371/XXL_p0212137120.jpg"
-      
+
   },
 
 
@@ -170,7 +170,7 @@ const bigProductsData = [
     name: "TIRTI",
     description: "Tinta Lbial",
     imgUrl:
-      
+
       "https://d1flfk77wl2xk4.cloudfront.net/Assets/tirtir-waterism-glow-tint-mini-30-colors/89/316/XXL_p0214831689.jpg"
   },
 
@@ -187,7 +187,7 @@ const bigProductsData = [
     name: "NOVO",
     description: "Crema de manos",
     imgUrl:
-      "https://d1flfk77wl2xk4.cloudfront.net/Assets/78/536/M_p0216553678.jpg"    
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/78/536/M_p0216553678.jpg"
   },
 
 
@@ -195,9 +195,9 @@ const bigProductsData = [
     name: "CORSX",
     description: "Piel Suave",
     imgUrl:
-      "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk36/pb_cosrx.jpg&w=640&q=80"    
+      "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk36/pb_cosrx.jpg&w=640&q=80"
   },
-  
+
 
 
 ];
@@ -224,9 +224,9 @@ for (let i = 0; i < bigProductsData.length; i++) {
 
 
 
-    
 
-    
+
+
 
 
 const productscontainerData = [
@@ -261,7 +261,7 @@ const productscontainerData = [
     price: 12.99 ,
     imgUrl:
     "https://d1flfk77wl2xk4.cloudfront.net/Assets/02/976/M_p0220697602.jpg"
-      
+
   },
 
   {
@@ -270,7 +270,7 @@ const productscontainerData = [
     price: 19.99,
     imgUrl:
         "https://d1flfk77wl2xk4.cloudfront.net/Assets/49/215/M_p0114021549.jpg"
-      
+
   },
 
   {
@@ -357,5 +357,4 @@ for (let i = 0; i < productscontainerData.length; i++) {
 
 
 
-      
-  
+
