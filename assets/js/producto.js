@@ -273,7 +273,29 @@ const productscontainerData = [
       
   },
 
+  {
+    name: "TORRIDEN",
+    description: "Hyaluronic",
+    price:12.90 ,
+    imgUrl:
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/96/252/M_p0203225296.jpg",
+  },
 
+    {
+    name: "SKIN 1004",
+    description: "Protector solar",
+    price:17.00,
+    imgUrl:
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/29/273/M_p0193127329.jpg",
+  },
+
+    {
+    name: "CANMAKE",
+    description: "Sombra de ojos",
+    price:7.93 ,
+    imgUrl:
+      "https://d1flfk77wl2xk4.cloudfront.net/Assets/24/303/M_p0209430324.jpg",
+  },
 
 ];
 
