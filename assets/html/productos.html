@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos</title>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,8 +16,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
     />
-
     <link rel="stylesheet" href="../css/productos.css" />
+    <link rel="icon" href="../img/logo..png">
     <link rel="stylesheet" href="../css/inicio.css">
   </head>
   <body>
@@ -55,7 +58,9 @@
             </li>
           </ul>
           <div class="d-flex ms-4 gap-4">
-            <a href="#" class="text-white"><i class="bi bi-person"></i></a>
+            <a href="#" class="text-white" id="btnAbrirBienvenida"
+              ><i class="bi bi-person"></i
+            ></a>
             <a href="#" class="text-white"><i class="bi bi-cart"></i></a>
             <!-- Nuevo icono de promociones -->
             <a href="#" class="text-white" id="iconPromo">
@@ -112,128 +117,13 @@
     </div>
 
     <div class="letter">
-      <b> ↝Los Mejores Productos de Aurea para ti ↜ </b>
+      <b>Los Mejores Productos de Aurea para ti:</b>
     </div>
 
+   
     <div class="big-product-container" id="big-product-container">
-      <div class="card">
-        <div class="image-container">
-          <img
-            src="https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_axis_y.jpg&w=640&q=80"
-            alt="AXIS-Y"
-          />
-          <button class="add-button">Añadir</button>
-        </div>
-        <div class="info">
-          <h3>AXIS-Y</h3>
-          <p>Toque calmante</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="image-container">
-          <img
-            src="https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_tocobo.jpg&w=640&q=80"
-            alt="TOCOBO"
-          />
-          <button class="add-button">Añadir</button>
-        </div>
-        <div class="info">
-          <h3>TOCOBO</h3>
-          <p>Brillo intenso</p>
-        </div>
-      </div>
-
-      <div class="card">
-      </div>
-
-      <div class="card">
-      </div>
-
-      <div class="card">
-        <div class="image-container">
-          <img
-            src="https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_dalba.jpg&w=640&q=80"
-            alt="d'Alba"
-          />
-          <button class="add-button">Añadir</button>
-        </div>
-        <div class="info">
-          <h3>d'Alba</h3>
-          <p>Brillo duradero</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="image-container">
-          <img
-            src="https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_one_thing.jpg&w=640&q=80"
-            alt="One Thing"
-          />
-          <button class="add-button">Añadir</button>
-        </div>
-        <div class="info">
-          <h3>One Thing</h3>
-          <p>Esencia pura</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="image-container">
-          <img
-            src="https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_laka.jpg&w=640&q=80"
-            alt="LAKA"
-          />
-          <button class="add-button">Añadir</button>
-        </div>
-        <div class="info">
-          <h3>LAKA</h3>
-          <p>Dúo de tintes frutales</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="image-container">
-          <img
-            src="https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk25/pb_rohto_mentholatum.jpg&w=640&q=80"
-            alt="Rohto Mentholatum"
-          />
-          <button class="add-button">Añadir</button>
-        </div>
-        <div class="info">
-          <h3>Rohto</h3>
-          <p>Cuidado intensivo</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="image-container">
-          <img
-            src="https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_house_of_hur.jpg&w=640&q=80"
-            alt="House of Hu"
-          />
-          <button class="add-button">Añadir</button>
-        </div>
-        <div class="info">
-          <h3>House of Hu</h3>
-          <p>Textura ligera</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="image-container">
-          <img
-            src="https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_medi_peel.jpg&w=640&q=80"
-            alt="Medi Peel"
-          />
-          <button class="add-button">Añadir</button>
-        </div>
-        <div class="info">
-          <h3>Medi Peel</h3>
-          <p>Peeling eficaz</p>
-        </div>
-      </div>
     </div>
+    
 
     <div class="mascota" onclick="toggleAyuda()">
       <img
@@ -253,66 +143,7 @@
       <h1 class="letter3">TE RECOMENDAMOS:</h1>
     </div>
 
-    <div class="product-container">
-      <div class="img-1">
-        <img
-          src="https://d1flfk77wl2xk4.cloudfront.net/Assets/71/468/M_p0193746871.jpg"
-          alt="Producto 1"
-        />
-        <div class="info">
-          <h3>Glutathione</h3>
-          <p>Crema facial</p>
-          <b>$20.00</b>
-        </div>
-      </div>
-
-      <div class="img-1">
-        <img
-          src="https://d1flfk77wl2xk4.cloudfront.net/Assets/20/113/M_p0198711320.jpg"
-          alt="Producto 2"
-        />
-        <div class="info">
-          <h3>Colorgram</h3>
-          <p>Gloss con color</p>
-          <b>$9.99</b>
-        </div>
-      </div>
-
-      <div class="img-1">
-        <img
-          src="https://d1flfk77wl2xk4.cloudfront.net/Assets/39/937/M_p0218793739.jpg"
-          alt="Producto 3"
-        />
-        <div class="info">
-          <h3>Joocyee</h3>
-          <p>Rubor en barra</p>
-          <b>$10.89</b>
-        </div>
-      </div>
-
-      <div class="img-1">
-        <img
-          src="https://d1flfk77wl2xk4.cloudfront.net/Assets/02/976/M_p0220697602.jpg"
-          alt="Producto 4"
-        />
-        <div class="info">
-          <h3>Shanteel</h3>
-          <p>Polvo compacto</p>
-          <b>$12.99</b>
-        </div>
-      </div>
-
-      <div class="img-1">
-        <img
-          src="https://d1flfk77wl2xk4.cloudfront.net/Assets/49/215/M_p0114021549.jpg"
-          alt="Producto 5"
-        />
-        <div class="info">
-          <h3>Centella</h3>
-          <p>Tonico Facial</p>
-          <b>$19.99</b>
-        </div>
-      </div>
+    <div class="product-container" id="product-container">
     </div>
 
     <footer class="py-5 text-white" style="background-color: #535353">
@@ -373,10 +204,137 @@
       </div>
     </footer>
 
+    <div id="popupBienvenida" class="popup-bienvenida">
+      <div class="popup-content" id="bienvenidaContent">
+        <h6 class="text-muted mb-1">Bienvenido a</h6>
+        <h2 class="fw-bold" style="color: #d20072">Aurea</h2>
+        <button id="btnIniciarSesion" class="btn btn-custom my-3">
+          Inicia sesión
+        </button>
+        <button class="btn btn-custom">Crear cuenta</button>
+      </div>
+
+      <div id="formLogin" class="popup-content" style="display: none">
+        <h6 class="text-muted mb-1 text-center">Bienvenido a</h6>
+        <h2 class="fw-bold text-center" style="color: #d20072">Aurea</h2>
+
+        <form class="mt-4" id="formularioLogin">
+          <input
+            type="email"
+            id="correo"
+            class="form-control mb-3 rounded-pill"
+            placeholder="Correo electrónico"
+            required
+          />
+
+          <div class="position-relative">
+            <input
+              type="password"
+              id="contraseña"
+              class="form-control mb-2 rounded-pill"
+              placeholder="Contraseña"
+              minlength="6"
+              required
+            />
+            <i
+              class="bi bi-eye-slash-fill position-absolute top-50 end-0 translate-middle-y me-3"
+              id="togglePassword"
+              style="cursor: pointer; color: #999"
+            ></i>
+          </div>
+
+          <div class="mb-3 text-muted text-center">
+            <small><a href="#">¿Olvidaste tu contraseña?</a></small>
+          </div>
+
+          <button type="submit" class="btn btn-custom w-100 rounded-pill mb-2">
+            Ingresar
+          </button>
+          <div class="text-center">
+            <small
+              >¿Eres nuevo?
+              <a href="#" id="linkCrearCuenta">Crea tu cuenta aquí</a></small
+            >
+          </div>
+        </form>
+      </div>
+
+      <div id="formRegistro" class="popup-content" style="display: none">
+        <h6 class="text-muted mb-1 text-center">Bienvenido a</h6>
+        <h2 class="fw-bold text-center" style="color: #d20072">Aurea</h2>
+        <p class="text-center">Crea tu cuenta</p>
+
+        <form class="mt-3" id="formularioRegistro">
+          <input
+            type="text"
+            id="nombre"
+            class="form-control mb-3 rounded-pill"
+            placeholder="Nombre"
+            required
+          />
+          <input
+            type="text"
+            id="apellidos"
+            class="form-control mb-3 rounded-pill"
+            placeholder="Apellidos"
+            required
+          />
+
+          <input
+            type="email"
+            id="correoRegistro"
+            class="form-control mb-3 rounded-pill"
+            placeholder="Correo electrónico"
+            required
+          />
+
+          <div class="input-group mb-3">
+            <input
+              type="password"
+              id="contraseñaRegistro"
+              class="form-control rounded-pill"
+              placeholder="Contraseña"
+              minlength="6"
+              required
+            />
+            <i
+              class="bi bi-eye-slash-fill position-absolute top-50 end-0 translate-middle-y me-3"
+              id="togglePasswordRegistro"
+              style="cursor: pointer; color: #999"
+            ></i>
+          </div>
+
+          <button type="submit" class="btn btn-custom w-100 rounded-pill mb-2">
+            Continuar
+          </button>
+
+          <div class="text-center">
+            <small
+              >¿Ya tienes una cuenta?
+              <a href="#" id="linkIniciarSesion">Inicia sesion</a></small
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+   
+    <div class="mascota" onclick="toggleAyuda()">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/4588/4588811.png"
+        alt="Koala de ayuda"
+      />
+    </div>
+
+    <div class="cuadro-ayuda" id="cuadroAyuda" style="display: none">
+      <h3>¡Hola! Soy Pchan.</h3>
+      <p>¿Tienes alguna sugerencia o comentario?</p>
+      <textarea placeholder="Escríbelo aquí..."></textarea>
+      <button onclick="enviarMensaje()">Enviar</button>
+    </div>
 
     
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
     <script src="../js/producto.js"></script>
     <script src="../js/script.js"></script>
   </body>
