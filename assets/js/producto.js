@@ -34,11 +34,11 @@ function enviarMensaje() {
 
 
 
-// FALTA AGREGAR EL PRECIO DE LOS PRODUCTOS EN ESTE ARREGLO SI SON NECESARIOS, COMO EN EL OTRO ARREGLO
 const bigProductsData = [
   {
     name: "SKIN1004",
     description: "Reparación delicada",
+
     imgUrl:
       "https://www.yesstyle.com/_next/image?url=https://ddvql06zg3s2o.cloudfront.net/Assets/res/imgs/creative/25wk37/pb_skin1004.jpg&w=640&q=80",
   },

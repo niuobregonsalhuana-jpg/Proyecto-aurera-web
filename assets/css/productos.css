@@ -26,6 +26,17 @@ body {
   color: var(--color-pink) !important;
 }
 
+.navbar-brand {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.2);
+}
+
+
+
+
 .title {
   margin-bottom: 20px;
   color: #ff0080;
@@ -141,6 +152,7 @@ body {
   font-size: 14px;
   color: #777;
   margin: 0;
+  
 }
 
 .letter3 {
@@ -157,6 +169,7 @@ body {
   cursor: pointer;
   z-index: 999;
   width: 80px;
+ 
 }
 
 .mascota img {
@@ -166,6 +179,7 @@ body {
 
 .mascota:hover img {
   transform: scale(1.1);
+  
 }
 
 .cuadro-ayuda {
@@ -180,6 +194,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   display: none;
   z-index: 998;
+  color: black;
 }
 
 .cuadro-ayuda h3 {
@@ -193,6 +208,7 @@ body {
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  
 }
 
 .cuadro-ayuda button {
