@@ -1,37 +1,104 @@
+
+
+/* 🔔 Toast de promoción */
+.promo-toast {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  background: #d20072;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease-in-out;
+  z-index: 1100;
+}
+.promo-toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 🛒 Mini carrito estilo Shein */
+.mini-cart {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 280px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  display: none;
+  z-index: 1050;
+  border: 1px solid #eee;
+}
+.mini-cart.show {
+  display: block;
+}
+.mini-cart-items {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.mini-cart-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.mini-cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.mini-cart-item .info {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* ✈️ Imagen volando al carrito */
+.fly-img {
+  position: fixed;
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  z-index: 2000;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  pointer-events: none;
+}
+
+/* Botón personalizado */
+.btn-pink,
+.btn-custom {
+  background: #d20072;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.btn-pink:hover,
+.btn-custom:hover {
+  background: #b80062;
+  color: white;
+}
+
+/* 🎟 Contador con fondo rosado, pequeño en esquina derecha */
 #cartCounter {
   position: fixed;
   top: 80px;
   right: 20px;
   background: #d20072;
   color: white;
-  padding: 8px 15px;
+  padding: 5px 10px;
   border-radius: 20px;
   font-weight: bold;
-  z-index: 1000;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 1200;
 }
-
-.promo-toast {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ff4fa1;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 10px;
-  display: none;
-  font-weight: bold;
-  z-index: 2000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.promo-toast.show {
-  display: block;
-  animation: fadeInOut 3s forwards;
-}
-
-@keyframes fadeInOut {
-  0% { opacity: 0; transform: translateY(20px); }
-  10% { opacity: 1; transform: translateY(0); }
-  90% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(20px); }
+#cartCounter i {
+  color: gold;
+  font-size: 15px;
 }

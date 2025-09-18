@@ -61,23 +61,38 @@
             <a href="#" class="text-white" id="btnAbrirBienvenida"
               ><i class="bi bi-person"></i
             ></a>
-            <a href="#" class="text-white"><i class="bi bi-cart"></i></a>
-          
+            <a href="#" class="text-white position-relative" id="navbarCart">
+          <i class="bi bi-cart"></i>
+          <span id="cartBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">0</span>
+        </a>
+            </a>
             <a href="#" class="text-white" id="iconPromo">
               <i class="bi bi-gift"></i>
-        
+            </a>
           </div>
         </div>
       </div>
     </nav>
 
 
-    <div id="cartCounter">0 🎟️</div>
+    <div id="cartCounter">
+  <i class="bi bi-ticket-fill text-warning"></i> 0
+</div>
+
 
 
     <div id="promoNotificacion" class="promo-toast">
       🎁 ¡Has desbloqueado un regalo!
     </div>
+
+    <!-- 🛒 Mini carrito estilo Shein -->
+<div id="miniCart" class="mini-cart">
+  <h5>🛒 Mi carrito</h5>
+  <div id="miniCartItems" class="mini-cart-items"></div>
+  <hr>
+  <p><b>Total: <span id="miniCartTotal">S/ 0.00</span></b></p>
+</div>
+
 
 
     <div class="modal fade" id="promoModal" tabindex="-1" aria-hidden="true">
